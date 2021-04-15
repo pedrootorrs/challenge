@@ -18,22 +18,22 @@ const Imei = () =>{
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Generate a random IMEI for testing. This IMEI generator is based on luhn algorithm." />
     </Head>
-    <main className= {`${styles.main} main flex-column items-center justify-center`}>
+    <main className= {`${styles.main} main flex flex-column`}>
             <h1 className={`${styles.title}`}>
                 Generate IMEI
             </h1>
-            <div className={`${styles.container} container flex items-center`} >
-                    <input className={`${styles.input}`} type="text"/>
+            <div className={`${styles.container } container  flex items-center`} >
+                    <input className={`${styles.input} input`} type="text"/>
                     <button className={`${styles.button} button ttu`}> Generate IMEI</button>
                 </div>
-                <div className="container">
+                <div className={`${styles.container}`}>
                     <input id="checkbox" type="checkbox" checked/>
                     <label htmlFor="checkbox" className={`${styles.container__text}`}>Copy to clipboard</label>
                 </div>
                 <div className={`${styles.popup} popup absolute`}></div>
             </main>
             <footer>
-                <p className="footer">Developed by <a className="link" href="https://github.com/miguel-rosa">Miguel Rosa</a></p>
+                <p className={`${styles.footer}`}>Developed by <a className={`${styles.link} `} href="https://github.com/miguel-rosa">Miguel Rosa</a></p>
             </footer>
     </>
            )

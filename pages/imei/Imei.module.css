@@ -1,5 +1,8 @@
 .main {
-    height:70vh;
+    height:70vh;	
+    align-items:center;	
+    justify-content:center;
+    
 }
 
 .title {
@@ -105,7 +108,7 @@
         line-height:1;
     }
     
-    input#input {
+    input.input {
         max-width:100%;
         border-radius:6px 6px 0 0;
         text-align:center
@@ -115,7 +118,7 @@
         flex-direction: column;
     }
     
-    button#button {
+    button.button {
         width:100%;
         border-radius:0 0 6px 6px;
     }
